@@ -1,0 +1,39 @@
+<record id="vehicle_model_access_admin" model="ir.model.access">
+    <field name="name">vehicle access admin</field>
+    <field name="model_id" ref="model_vehicle"/>
+    <field name="group_id" ref="buyorrent_admin"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_unlink" eval="1"/>
+</record>
+
+<record id="vehicle_model_access_user" model="ir.model.access">
+    <field name="name">vehicle access user</field>
+    <field name="model_id" ref="model_vehicle"/>
+    <field name="group_id" ref="buyorrent_user"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_create" eval="0"/>
+    <field name="perm_write" eval="0"/>
+    <field name="perm_unlink" eval="0"/>
+</record>
+
+<record id="vehicle_offer_access_admin" model="ir.model.access">
+    <field name="name">vehicle offer access admin</field>
+    <field name="model_id" ref="model_vehicle_offer"/>
+    <field name="group_id" ref="buyorrent_admin"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_unlink" eval="1"/>
+</record>
+
+<record id="vehicle_offer_access_user" model="ir.model.access">
+    <field name="name">vehicle offer access user</field>
+    <field name="model_id" ref="model_vehicle_offer"/>
+    <field name="group_id" ref="buyorrent_user"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_write" eval="0"/>
+    <field name="perm_unlink" eval="0"/>
+</record>
